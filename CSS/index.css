@@ -1,0 +1,45 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
+}
+
+body {
+	background-color: #abb7b7;
+	color: #000;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#button-container {
+	display: grid;
+	width: 400px;
+	margin: 50px auto;
+	border: 1px solid #cddde8;
+	padding: 25px;
+	border-radius: 25px;
+}
+
+button {
+	background-color: #ecf0f1;
+	color: #000;
+	text-align: center;
+	width: 200px;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 20px;
+	margin-bottom: 0;
+	top: 20px;
+}
+
+@media (min-width: 375px) {
+	#button-container {
+		width: 300px;
+	}
+}
