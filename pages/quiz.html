@@ -8,19 +8,46 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge"
+		/>
+		<title>Quizz sobre Dengue</title>
 		<link
 			rel="stylesheet"
 			href="../CSS/quiz.css"
 		/>
-		<title>Quizz</title>
+		<script
+			src="../JS/quiz.js"
+			defer
+		></script>
 	</head>
-	<link
-		rel="icon"
-		href="../img/logo.ico"
-		type="image/x-icon"
-	/>
 	<body>
-		<button><a href="../index.html">Pagina Inicial</a></button>
-		<h1>Quizz</h1>
+		<button id="back-title"><a href="../index.html">Pagina Inicial</a></button>
+		<h1 id="main-title">Quizz Sobre a Dengue!</h1>
+		<div
+			id="score-container"
+			class="hide"
+		>
+			<h2>Parabéns!</h2>
+			<p id="display-score"><span>90</span>%</p>
+			<p>
+				Você acertou <span id="correct-answers">0</span> de
+				<span id="questions-qty">10</span> perguntas.
+			</p>
+			<button id="restart">Refazer quizz!</button>
+		</div>
+		<div id="quizz-container">
+			<p id="question">
+				<span id="question-number">1</span> -
+				<span id="question-text">Qual é a unidade de medida para metros?</span>
+			</p>
+			<div id="answers-box"></div>
+		</div>
+
+		<!-- TEMPLATE RESPOSTA -->
+		<button class="answer-template hide">
+			<span class="btn-letter"></span> <span class="question-answer"></span>
+		</button>
 	</body>
 </html>
