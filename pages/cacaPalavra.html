@@ -20,7 +20,36 @@
 		/>
 	</head>
 	<body>
-		<button><a href="../index.html">Pagina Inicial</a></button>
-		<h1>Caça Palavras</h1>
+		<button id="back-title"><a href="../index.html">Pagina Inicial</a></button>
+		<h1>Digite a palavra que encontrou</h1>
+		<div>
+			<form
+				id="search"
+				data-js="form"
+			>
+				<input
+					data-js="search"
+					type="text"
+				/>
+				<button>Buscar</button>
+			</form>
+		</div>
+		<table id="table">
+			<tbody data-js="tbody">
+				<tr data-js="line0"></tr>
+				<tr data-js="line1"></tr>
+				<tr data-js="line2"></tr>
+				<tr data-js="line3"></tr>
+				<tr data-js="line4"></tr>
+				<tr data-js="line5"></tr>
+				<tr data-js="line6"></tr>
+				<tr data-js="line7"></tr>
+				<tr data-js="line8"></tr>
+				<tr data-js="line9"></tr>
+			</tbody>
+		</table>
+		<h2>Encontre as 8 Palavras</h2>
+
+		<script src="../JS/cacaPalavra.js"></script>
 	</body>
 </html>
