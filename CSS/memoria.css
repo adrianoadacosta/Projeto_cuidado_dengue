@@ -4,12 +4,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style: none;
+	border: none;
 	font-family: helvetica;
 }
 
 body {
 	background-color: #abb7b7;
 	color: #000;
+	margin: 0;
 }
 
 h1 {
@@ -35,4 +38,147 @@ a {
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
+}
+
+main {
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 87vh;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 15px 45px;
+}
+/* ESTILO DOS BOTOES */
+header {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 150px;
+	background-color: rgba(241, 233, 15, 0.484);
+	font-size: 1em;
+	padding: 5px;
+	border-radius: 5px;
+	color: aliceblue;
+	position: fixed;
+	top: 130px;
+	left: 50px;
+}
+
+#startButton {
+	width: 100%;
+	max-width: 150px;
+	background-color: rgba(188, 180, 34, 0.484);
+	font-size: 1em;
+	padding: 5px;
+	margin-top: 3rem;
+	border-radius: 5px;
+	color: aliceblue;
+	cursor: pointer;
+	position: fixed;
+	left: 125px;
+	top: 50px;
+}
+
+.back {
+	background-image: url('../img/back.jpg');
+	background-size: 200px;
+	backface-visibility: hidden;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+	width: 100%;
+	max-width: 700px;
+}
+
+.card {
+	aspect-ratio: 3/4;
+	width: 100%;
+	background-color: rgba(134, 217, 191, 0.666);
+	border-radius: 5px;
+	position: relative;
+	transition: all 400ms ease;
+	cursor: pointer;
+	transform-style: preserve-3d;
+}
+
+.face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+	border: 2px solid #d5f027f3;
+	border-radius: 5px;
+	transition: all 500ms ease;
+}
+
+.front {
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+
+.reveal-card {
+	transform: rotateY(180deg);
+}
+
+.disabled-card {
+	filter: saturate(0);
+	opacity: 0.8;
+}
+
+#startButton:hover {
+	background-color: rgba(188, 180, 34, 0.8);
+	transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		overflow-y: scroll;
+		padding-right: 10px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	bottom {
+		top: 8px;
+	}
+
+	header {
+		position: static;
+		margin-top: -25px;
+	}
+
+	main {
+		margin-top: 20px;
+		position: relative;
+	}
+
+	#startButton {
+		left: 70px;
+		position: relative;
+		margin-top: -35px;
+	}
+
+	#startButton:hover {
+		background-color: rgba(188, 180, 34, 0.8);
+		transition: background-color 0.3s ease;
+	}
+	.back {
+		background-size: 150px;
+		backface-visibility: hidden;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		width: 100%;
+		max-width: 700px;
+		margin-top: 80px;
+	}
 }

@@ -13,21 +13,11 @@ body {
 	overflow-x: hidden;
 }
 
-h1 {
+h2 {
 	position: relative;
 	text-align: center;
-	margin-top: 50px;
-	left: 50px;
-}
-h2,
-p {
-	position: relative;
-	text-align: center;
-	left: 50px;
-}
-
-#congrats {
-	color: rgb(226, 13, 13);
+	margin-top: 15px;
+	left: 0;
 }
 
 #back-title {
@@ -39,7 +29,7 @@ p {
 	border-radius: 20px;
 	position: relative;
 	left: 35%;
-	top: 20px;
+	top: 10px;
 }
 
 a {
@@ -127,14 +117,9 @@ a {
 		top: 5px;
 	}
 
-	h1 {
+	h2 {
 		margin-top: 10px;
 		left: 0;
-	}
-
-	h2,
-	p {
-		left: 5px;
 	}
 
 	#search {
