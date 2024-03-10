@@ -1,0 +1,74 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	border: none;
+	font-family: helvetica;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #abb7b7;
+	color: #000;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+button {
+	background-color: #ecf0f1;
+	color: #000;
+	text-align: center;
+	width: 200px;
+	padding: 20px;
+	border-radius: 20px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+#grade {
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	zoom: 150%;
+}
+
+#grade div {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: url('../img/cartaz_mosquito_2017 (2).jpg');
+	background-size: 300px 200px;
+	transition: 0.25s ease-in-out;
+}
+
+#grade div:hover {
+	z-index: 10;
+	opacity: 0.7;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 3px 3px #ecf0f1;
+}
+
+@media (max-width: 450px) {
+	#grade {
+		zoom: 115%;
+	}
+}
